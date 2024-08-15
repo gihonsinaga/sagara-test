@@ -7,6 +7,7 @@ import Certification from "./pages/Certification";
 import FAQ from "./pages/FAQ";
 import Dashboard from "./pages/DashboardAdmin";
 import DashboardStudent from "./pages/DashboardStudent";
+import PageNotFound from "./component/PageNotFound.jsx";
 
 function App() {
   return (

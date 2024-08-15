@@ -7,7 +7,7 @@ import Certification from "./pages/Certification";
 import FAQ from "./pages/FAQ";
 import Dashboard from "./pages/DashboardAdmin";
 import DashboardStudent from "./pages/DashboardStudent";
-import PageNotFound from "./component/PageNotFound.jsx";
+import PageNotFound from "./component/PageNotFound";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboardStudent" element={<DashboardStudent />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

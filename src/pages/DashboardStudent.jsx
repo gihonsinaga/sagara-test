@@ -324,19 +324,22 @@ export default function DashboardStudent() {
 
                   {/* Display students */}
                   <div className="mt-4">
-                    <h2 className="text-xl font-bold mb-2">Students List</h2>
-                    <table className="w-full border-collapse border">
-                      <thead>
+                    <table className="w-full border-collapse border mt-10">
+                      <thead className="text-gray-400 font-light ">
                         <tr>
-                          <th className="border p-2">Full Name</th>
-                          <th className="border p-2">Email Address</th>
-                          <th className="border p-2">Phone Number</th>
-                          <th className="border p-2">Instance</th>
-                          <th className="border p-2">Created At</th>
-                          <th className="border p-2">Actions</th>
+                          <th className="border p-2 text-start">Full Name</th>
+                          <th className="border p-2 text-start">
+                            Email Address
+                          </th>
+                          <th className="border p-2 text-start">
+                            Phone Number
+                          </th>
+                          <th className="border p-2 text-start">Instance</th>
+                          <th className="border p-2 text-start">Created At</th>
+                          <th className="border p-2 text-start">Actions</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody className="font-semibold text-sm">
                         {students?.map((student) => (
                           <tr key={student.id}>
                             <td className="border p-2">{student?.fullName}</td>

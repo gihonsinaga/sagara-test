@@ -325,9 +325,11 @@ export default function DashboardStudent() {
                   {/* Display students */}
                   <div className="mt-4">
                     <table className="w-full border-collapse border mt-10">
-                      <thead className="text-gray-400 font-light ">
+                      <thead className="text-gray-400 font-light text-sm">
                         <tr>
-                          <th className="border p-2 text-start">Full Name</th>
+                          <th className="border p-2 text-start py-4 ">
+                            Full Name
+                          </th>
                           <th className="border p-2 text-start">
                             Email Address
                           </th>
